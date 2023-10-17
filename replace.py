@@ -57,6 +57,25 @@ for i in range(len(df)):
     ##
     elif df.at[i, 'lib_specialite_esp_et'] == "Master Alternance Vermeg :Management Digital et Système d'Information":
         df.at[i, 'lib_specialite_esp_et'] = "Master MDSI Alternance"
+    ##nouveau
+    elif df.at[i, 'lib_specialite_esp_et'] == 'Licence en Business Computing ':
+        df.at[i, 'lib_specialite_esp_et'] = 'Licence Business Computing'
+    elif df.at[i, 'lib_specialite_esp_et'] == "Master Professionnel en Management Digital et Système d'information ":
+        df.at[i, 'lib_specialite_esp_et'] = "Master Management Digital & Systemes d'Information"
+    elif df.at[i, 'lib_specialite_esp_et'] == 'Licence Business Computing - Parcours Business Intelligence (BI)':
+        df.at[i, 'lib_specialite_esp_et'] = 'Licence Business Computing'
+    elif df.at[i, 'lib_specialite_esp_et'] == 'Licence Business Computing- Parcours  Business Information System ( BIS)':
+        df.at[i, 'lib_specialite_esp_et'] = 'Licence Business Computing'
+    elif df.at[i, 'lib_specialite_esp_et'] == 'Licence Business Computing ':
+        df.at[i, 'lib_specialite_esp_et'] = 'Licence Business Computing'
+    elif df.at[i, 'lib_specialite_esp_et'] == 'Licence en Sciences de Gestion ':
+        df.at[i, 'lib_specialite_esp_et'] = 'Licence Sciences de Gestion'
+    elif df.at[i, 'lib_specialite_esp_et'] == 'Master Professionnel en Marketing Digital ':
+        df.at[i, 'lib_specialite_esp_et'] = 'Master Marketing Digital'
+    elif df.at[i, 'lib_specialite_esp_et'] == 'CES Révision Comptable':
+        df.at[i, 'lib_specialite_esp_et'] = 'Master Comptabilité Contrôle Audit'
+    elif df.at[i, 'lib_specialite_esp_et'] == 'Master en Comptabilité Contrôle Audit ':
+        df.at[i, 'lib_specialite_esp_et'] = 'Master Comptabilité Contrôle Audit'
 
 # Enregistrer le DataFrame modifié dans le même fichier Excel
 df.to_excel(fichier_excel, index=False)
